@@ -159,17 +159,17 @@ def yizhe(feature_188D, label_188D, feature_localdpp, label_localdpp, feature_ac
     return (test_pred)
 
 def MSFBinderSVMRFNB():
-    feature_localdpp = np.loadtxt(open("F:/DNAbindingprotein/g_feature_gai1221_local_2_2_guiyihua.csv"), delimiter=",",
+    feature_localdpp = np.loadtxt(open("./featuredata/g_feature_gai1221_local_2_2_guiyihua.csv"), delimiter=",",
                                  skiprows=0)
-    label_localdpp = np.loadtxt(open("F:/DNAbindingprotein/g_label_CT_1211.csv"), delimiter=",", skiprows=0)
-    feature_dwt = np.loadtxt(open("F:/DNAbindingprotein/PSSM_DWT_feature_guiyihua.csv"), delimiter=",",
+    label_localdpp = np.loadtxt(open("./featuredata/g_label_CT_1211.csv"), delimiter=",", skiprows=0)
+    feature_dwt = np.loadtxt(open("./featuredata/PSSM_DWT_feature_guiyihua.csv"), delimiter=",",
                                 skiprows=0)
-    label_dwt = np.loadtxt(open("F:/DNAbindingprotein/g_label_CT_1211.csv"), delimiter=",", skiprows=0)
-    feature_188D = np.loadtxt(open("F:/DNAbindingprotein/188D_guiyihua.csv"), delimiter=",", skiprows=0)
-    label_188D = np.loadtxt(open("F:/DNAbindingprotein/g_label_CT_1211.csv"), delimiter=",", skiprows=0)
-    feature_acstruct = np.loadtxt(open("F:/DNAbindingprotein/g_feature_gai1221_structual_guiyihua.csv"),
+    label_dwt = np.loadtxt(open("./featuredata/g_label_CT_1211.csv"), delimiter=",", skiprows=0)
+    feature_188D = np.loadtxt(open("./featuredata/188D_guiyihua.csv"), delimiter=",", skiprows=0)
+    label_188D = np.loadtxt(open("./featuredata/g_label_CT_1211.csv"), delimiter=",", skiprows=0)
+    feature_acstruct = np.loadtxt(open("./featuredata/g_feature_gai1221_structual_guiyihua.csv"),
                                         delimiter=",", skiprows=0)
-    label_acstruct = np.loadtxt(open("F:/DNAbindingprotein/g_label_CT_1211.csv"), delimiter=",",
+    label_acstruct = np.loadtxt(open("./featuredata/g_label_CT_1211.csv"), delimiter=",",
                                       skiprows=0)
     localdppparam = np.loadtxt(open("./paramterdata/two_local_2_2_param.csv"), delimiter=",", skiprows=0)
     se188Dparam = np.loadtxt(open("./paramterdata/two_188D_param.csv"), delimiter=",", skiprows=0)
