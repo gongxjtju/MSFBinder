@@ -7,7 +7,7 @@ You can gain PDB1075 and PDB186 datasets from http://server.malab.cn/Local-DPP/D
 
 DWT method
 
-The code of DWT method can be gained from https://figshare.com/articles/Improved_detection_of_DNA-binding_proteins_via_compression_technology_on_PSSM_information/5104084
+The code of DWT method and line_map functon can be gained from https://figshare.com/articles/Improved_detection_of_DNA-binding_proteins_via_compression_technology_on_PSSM_information/5104084
 
 188D method
 
