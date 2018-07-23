@@ -77,11 +77,11 @@ def transtofeature(countpositive,countnege,lamudamax,n):
     feature=[]
     feature.extend(featurenegative)
     feature.extend(featurepositive)
-    np.savetxt('F:/DNAbindingprotein/g_feature_gai1221_local_'+str(n)+'_'+str(lamudamax)+'_'+str(countnege+countpositive)+'.csv', feature, delimiter=',')
+    np.savetxt('./featuredata/g_feature_gai1221_local_'+str(n)+'_'+str(lamudamax)+'_'+str(countnege+countpositive)+'.csv', feature, delimiter=',')
     label=[]
     label.extend(labelnegtive)
     label.extend(labelnpositive)
-    np.savetxt('F:/DNAbindingprotein/g_label_gai1221_local_'+str(n)+'_'+str(lamudamax)+'_'+str(countnege+countpositive)+'.csv', label, delimiter=',')
+    np.savetxt('./featuredata/g_label_gai1221_local_'+str(n)+'_'+str(lamudamax)+'_'+str(countnege+countpositive)+'.csv', label, delimiter=',')
 #transtofeature()
 import sys
 print "jiaobenmin", sys.argv[0]
