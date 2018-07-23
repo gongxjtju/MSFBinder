@@ -51,7 +51,16 @@ The n is n in the paper.
 
 MSFBinderSVM, MSFBinderSVMRF and MSFBinderSVMRFNB method
 
-You need to gain parameters of the stacking methods by grid search.
+g_feature_gai1221_local_2_2_guiyihua.csv can be gained by localdpp.py and line_map function.
+
+PSSM_DWT_feature_guiyihua.csv can be gained by DWT mehod and line_map function.
+
+g_feature_gai1221_structual_guiyihua.csv can be gained by ac_struct.py and linemap function.
+
+188D_guiyihua.csv can be gained by 188D.jar and linemap function.
+
+The C and gamma of SVM for local_DPP_3_1 are 0.25 and 0.35355339059327379 respectively. 
+
 
 
 
