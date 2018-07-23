@@ -81,12 +81,12 @@ def transtofeature(length,stratpositive,endpositive,countpositive,startnege,endn
     feature=[]
     feature.extend(featurenegative)
     feature.extend(featurepositive)
-    np.savetxt('F:/DNAbindingprotein/g_feature_gai1221_structual_'+str(countnege+countpositive)+'.csv', feature, delimiter=',')
+    np.savetxt('./featuredata/g_feature_gai1221_structual_'+str(countnege+countpositive)+'.csv', feature, delimiter=',')
     print len(feature)
     label=[]
     label.extend(labelnegtive)
     label.extend(labelnpositive)
-    np.savetxt('F:/DNAbindingprotein/g_label_gai1221_structual__'+str(countnege+countpositive)+'.csv', label, delimiter=',')
+    np.savetxt('./featuredata/g_label_gai1221_structual__'+str(countnege+countpositive)+'.csv', label, delimiter=',')
 #transtofeature()
 import sys
 print "jiaobenmin", sys.argv[0]
