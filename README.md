@@ -35,7 +35,7 @@ The endpositive(endnege) is the number of the last positive(negative) sample.
 
 The countpositive(countnege) is the amount of positive(negative) samples. 
 
-Then you can gain g_feature_gai1221_structual_186.csv, g_label_gai1221_structual_186.csv, g_feature_gai1221_structual_1075.csv,g_label_gai1221_structual_1075.csv. 
+Then you can gain g_feature_gai1221_structual_186.csv, g_label_gai1221_structual_186.csv, g_feature_gai1221_structual_1075.csv,g_label_gai1221_structual_1075.csv. These files with "feature" need to be normalized by line_map. 
 
 Local_DPP method
 
