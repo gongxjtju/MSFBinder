@@ -49,7 +49,7 @@ The lamudamax is lamuda in the paper.
 
 The n is n in the paper. 
 
-## MSFBinderSVM, MSFBinderSVMRF and MSFBinderSVMRFNB method
+## MSFBinderSVM, MSFBinderSVMRF and MSFBinderSVMRFNB methods
 
 g_feature_gai1221_local_2_2_guiyihua.csv can be gained by localdpp.py and line_map function.
 
