@@ -1,15 +1,15 @@
 # MSFBinder1
 A Model Stacking Framework for Predicting DNA Binding Proteins
 
-DataSet
+##DataSet
 
 You can gain PDB1075 and PDB186 datasets from http://server.malab.cn/Local-DPP/Datasets.html
 
-DWT method
+##DWT method
 
 The code of DWT method and line_map functon can be gained from https://figshare.com/articles/Improved_detection_of_DNA-binding_proteins_via_compression_technology_on_PSSM_information/5104084
 
-188D method
+##188D method
 
 java -jar 188D.jar test.txt result.txt
 
@@ -21,7 +21,7 @@ Chen Lin, Ying Zou, Ji Qin, Xiangrong Liu, Yi Jiang, Caihuan Ke, Quan Zou. Hiera
 
 Quan Zou, Zhen Wang, Xinjun Guan, Bin Liu, Yunfeng Wu, Ziyu Lin. An Approach for Identifying Cytokines Based On a Novel Ensemble Classifier. BioMed Research International. 2013, 2013:686090
 
-Ac_struct method
+##Ac_struct method
 
 You need to utilize the PSIPRED2 to gain the predicted secondary structure file. 
 
@@ -37,7 +37,7 @@ The countpositive(countnege) is the amount of positive(negative) samples.
 
 Then you can gain g_feature_gai1221_structual_186.csv, g_label_gai1221_structual_186.csv, g_feature_gai1221_structual_1075.csv,g_label_gai1221_structual_1075.csv. These files with "feature" need to be normalized by line_map. 
 
-Local_DPP method
+##Local_DPP method
 
 You need to gain the PSSM matrix of protein suquences by PSI-BLAST.
 
@@ -49,7 +49,7 @@ The lamudamax is lamuda in the paper.
 
 The n is n in the paper. 
 
-MSFBinderSVM, MSFBinderSVMRF and MSFBinderSVMRFNB method
+##MSFBinderSVM, MSFBinderSVMRF and MSFBinderSVMRFNB method
 
 g_feature_gai1221_local_2_2_guiyihua.csv can be gained by localdpp.py and line_map function.
 
