@@ -39,7 +39,15 @@ Then you can gain g_feature_gai1221_structual_186.csv, g_label_gai1221_structual
 
 Local_DPP method
 
-You need to gain the PSSM matrix of protein suquences.
+You need to gain the PSSM matrix of protein suquences by PSI-BLAST.
+
+python localdpp.py countpositive countnege lamudamax n
+
+The countpositive and countnege are as same as before.
+
+The lamudamax is lamuda in the paper.
+
+The n is n in the paper. 
 
 MSFBinderSVM, MSFBinderSVMRF and MSFBinderSVMRFNB method
 
