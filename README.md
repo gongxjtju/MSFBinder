@@ -23,7 +23,17 @@ Quan Zou, Zhen Wang, Xinjun Guan, Bin Liu, Yunfeng Wu, Ziyu Lin. An Approach for
 
 Ac_struct method
 
-You need to find the least value of protein sequences and utilize the PSIPRED2 to gain the predicted secondary structure file. 
+You need to utilize the PSIPRED2 to gain the predicted secondary structure file. 
+
+python ac_struct.py length startpositive endpositive countpositive startnege endnege countnege
+
+The length is the least length of protien sequences. 
+
+The startpositive(startnege) is the number of the first positive(negative) sample. 
+
+The endpositive(endnege) is the number of the last positive(negative) sample. 
+
+The countpositive(countnege) is the amount of positive(negative) samples. 
 
 Local_DPP method
 
