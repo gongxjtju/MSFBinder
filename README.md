@@ -3,15 +3,17 @@ A Model Stacking Framework for Predicting DNA Binding Proteins
 
 ## DataSet
 
-You can gain PDB1075 and PDB186 datasets from http://server.malab.cn/Local-DPP/Datasets.html
+The raw sequences of PDB1075 and PDB186 datasets can be obtained from http://server.malab.cn/Local-DPP/Datasets.html
 
-## DWT method
+## Feature extraction 
 
-The code of DWT method and line_map functon can be gained from https://figshare.com/articles/Improved_detection_of_DNA-binding_proteins_via_compression_technology_on_PSSM_information/5104084
+### DWT method
 
-PSSM_DWT_feature_guiyihua.csv can be gained by DWT method. The PSSM_DWT_feature_guiyihua.csv is too big to upload. The positive samples are behind the negative samples. 
 
-## 188D method
+The source code of DWT method can be downloaed from https://figshare.com/articles/Improved_detection_of_DNA-binding_proteins_via_compression_technology_on_PSSM_information/5104084
+
+
+### 188D method
 
 java -jar 188D.jar test.txt result.txt
 
@@ -23,9 +25,9 @@ Chen Lin, Ying Zou, Ji Qin, Xiangrong Liu, Yi Jiang, Caihuan Ke, Quan Zou. Hiera
 
 Quan Zou, Zhen Wang, Xinjun Guan, Bin Liu, Yunfeng Wu, Ziyu Lin. An Approach for Identifying Cytokines Based On a Novel Ensemble Classifier. BioMed Research International. 2013, 2013:686090
 
-## Ac_struct method
+### Ac_struct method
 
-You need to utilize the PSIPRED2 to gain the predicted secondary structure file. 
+Using PSIPRED2 to obtain the predicted secondary structure file and  ac_struct.py for extracting features from the structure file.  
 
 python ac_struct.py length startpositive endpositive countpositive startnege endnege countnege
 
@@ -37,31 +39,23 @@ The endpositive(endnege) is the number of the last positive(negative) sample.
 
 The countpositive(countnege) is the amount of positive(negative) samples. 
 
-Then you can gain g_feature_gai1221_structual_186.csv, g_label_gai1221_structual_186.csv, g_feature_gai1221_structual_1075.csv,g_label_gai1221_structual_1075.csv. These files with "feature" need to be normalized by line_map. 
 
-## Local_DPP method
+### Local_DPP method
 
-You need to gain the PSSM matrix of protein suquences by PSI-BLAST.
+Using the PSI-BLAST to obtain the PSSM matrix and localdpp.py for extracting features.
 
 python localdpp.py countpositive countnege lamudamax n
 
 The countpositive and countnege are as same as before.
 
-The lamudamax is lamuda in the paper.
+The suggested values of lamudamax and n are 2 and 2 or 3 and 1.
 
-The n is n in the paper. 
 
-## MSFBinderSVM, MSFBinderSVMRF and MSFBinderSVMRFNB methods
+All the features are preprcessed and stored in the directory: featuredata 
 
-g_feature_gai1221_local_2_2_guiyihua.csv can be gained by localdpp.py and line_map function.
 
-PSSM_DWT_feature_guiyihua.csv can be gained by DWT mehod and line_map function.
 
-g_feature_gai1221_structual_guiyihua.csv can be gained by ac_struct.py and linemap function.
 
-188D_guiyihua.csv can be gained by 188D.jar and linemap function.
-
-The C and gamma of SVM for local_DPP_3_1 are 0.25 and 0.35355339059327379 respectively. 
 
 
 
